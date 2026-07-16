@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보물창고</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+        }
+
+        header {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 30px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+        }
+
+        header h1 {
+            color: #264d87;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            margin: 0;
+        }
+
+        .intro p {
+            color: #777;
+            margin: 0;
+        }
+
+        .category {
+            margin: 40px;
+        }
+
+        .category h2 {
+            color: #264d87;
+            margin-bottom: 20px;
+            border-left: 6px solid #264d87;
+            padding-left: 10px;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 120px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            transition: .3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            color: gray;
+            margin: 60px 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            SON's LinkHub🌐
+        </h1>
+        <div class="intro">
+            <p>자주 사용하는 사이트를 한곳에서 빠르게.</p>
+        </div>
+
+    </header>
+    <section class="category">
+
+        <h2>🔍 검색</h2>
+
+        <div class="links">
+
+            <div class="card">
+                <a href="https://m.naver.com/">
+                    <img
+                        src="https://play-lh.googleusercontent.com/YW_Rd7EUbZZ6gyEblSbXHGSPOy54FzBgtFmWgCSYioTskmhP5n1-L-Ay7fCdE0RUvzI">
+                    <span>NAVER</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://map.naver.com/">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZoPZnt14Kg7ERV4MArglWujtYfZ288251rL94xzY4RA&s=10">
+                    <span>MAP</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.google.co.kr">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHOaVnHPh9mZ9anG9zqyBy_wkRU4l_QTkOMRZwgPphA&s=10">
+                    <span>GOOGLE</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="category">
+
+        <h2>🎬 엔터테인먼트</h2>
+
+        <div class="links">
+
+            <div class="card">
+                <a href="https://youtube.com">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png">
+                    <span>YouTube</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.netflix.com">
+                    <img src="https://cdn.digitaltoday.co.kr/news/photo/201606/71043_86083_3646.jpg">
+                    <span>Netflix</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.disneyplus.com">
+                    <img
+                        src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5CxR/image/9XcqgiDZg0gly7Infnam_qvHF-g">
+                    <span>Disney+</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.tving.com/">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGoPgYZElyZiVt2UfxAV9iwX_MYhvilQMAvKwNNpDDQ&s=10">
+                    <span>TVING</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.instagram.com/">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1mEo2-NnFTlPRLM13eEJf-qv66rqJUPRu-bAneh4Ncg&s=10">
+                    <span>Instagram</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://comic.naver.com/index">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0DPTjxgdXZ2wx3WZc0NH3rG9362EjoYr66ExIBFEXw&s=10">
+                    <span>WebToon</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://fconline.nexon.com/main/index">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNP9qKiHsf_lZI4Zw0CKeLOLaf8ImQTHytXVa55zB9w&s=10">
+                    <span>FC Online</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="category">
+
+        <h2>🏫 학교</h2>
+
+        <div class="links">
+
+            <div class="card">
+                <a href="https://everytime.kr/timetable">
+                    <img
+                        src="https://play-lh.googleusercontent.com/8Eqv5gK69QNR718TFyMyNjKOQ4qCjlCoHIBsdXHT3f8DT-6jRV2xF89teWaoSie98kM">
+                    <span>Everytime</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://ys.learnus.org/">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSydZEINJRfQ5usneVP5_ujkQwa3x6U1Hchtw&s">
+                    <span>LearnUs</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://portal.yonsei.ac.kr/portal/MainCtr/index.do">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpE68bIaHJsv81NMkhNmmfLu_vPlkSyoZ0kg&s">
+                    <span>Yonsei</span>
+                </a>
+            </div>
+            
+
+        </div>
+
+    </section>
+    <section class="category">
+
+        <h2>💻 개발</h2>
+
+        <div class="links">
+
+            <div class="card">
+                <a href="https://chatgpt.com/">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQipK7UxPFs4Qy557KZXavOTaVkwjVgRDXRE1ED7q-uQ&s=10">
+                    <span>ChatGPT</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://wrtn.ai/">
+                    <img
+                        src="https://i.namu.wiki/i/a0FHA7fSkc6Ne8LVeAiLt9WolRTuGkMqCihaTDE1C8Q4Bywogq5t387NookV1rwrU05WqM_IwwegKNSHsFmpWw.webp">
+                    <span>Wrtn</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://github.com/">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png">
+                    <span>GitHub</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.codetree.ai/missions">
+                    <img src="https://miro.medium.com/v2/resize:fit:2400/1*wgkDMhNEKkDTKOPpv5E89g.jpeg">
+                    <span>CodeTree</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://programmers.co.kr/">
+                    <img
+                        src="https://grepp-programmers.s3.amazonaws.com/production/file_resource/905/survey-prgm-logo.png">
+                    <span>Programmers</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.figma.com/">
+                    <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png">
+                    <span>Figma</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="category">
+
+        <h2>📚 공부</h2>
+
+        <div class="links">
+
+            <div class="card">
+                <a href="https://www.mathway.com/ko/Algebra">
+                    <img src="https://www.mathway.com/presskit/mathway_icon_rounded.png">
+                    <span>Mathway</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://octave-online.net/">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUY8jQSiFMUCP_v4B4ahzVprNvRRH1L65aQ&s">
+                    <span>Octave</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.geogebra.org/graphing">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPh_OfN1IJCJvTWSMWPSFLccnd3CMO7vqCQ&s">
+                    <span>GeoGebra</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://www.desmos.com/calculator?lang=ko">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5GdSV4vBNkzPGsttu4nS_XJmbmvVN5Iqygub2FTMJaA&s=10">
+                    <span>Desmos</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="https://editor.codecogs.com/">
+                    <img
+                        src="https://images.sftcdn.net/images/t_app-icon-m/p/11683c76-2158-4718-8b90-3e3fd2502575/2886811830/xformula-equation-editor-logo">
+                    <span>CodeCogs</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        Made by SON © 2026
+    </footer>
+</body>
+
+</html>
